@@ -24,7 +24,7 @@ class Document:
     def __del__(self):
         print(f"Document object destroyed for {self.name}")
 
-@app.route('/add', methods=['POST'])
+@app.route('/auth', methods=['POST'])
 def create_document():
     try:
         data = request.get_json()
