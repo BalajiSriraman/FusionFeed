@@ -1,0 +1,53 @@
+Array of Objects:
+
+An array of objects is a collection or list where each element in the array is an instance of a class (an object). In the context of OOP, it allows you to manage multiple instances of entities with similar properties and behaviors efficiently.
+
+In the code, an array of objects is created to store instances of the BLog class.
+and the posted to mongo db
+
+
+This array makes it easy to manage and manipulate Blog data within your application.
+
+
+
+
+Static is a keyword in C++ used to give special characteristics to an element. 
+
+Static variable in functions
+Static Class Objects
+Static member Variable in class
+Static Methods in class
+
+And they have a scope till the program runs
+
+Class or Static Variables in Python
+
+In Python programming, a static variable is said to be a class variable that is common to all class members. 
+
+the @staticmethod decorator is used to define the Validate method as a static method within the AuthValidation class. 
+
+in our case 
+
+This allows you to call the Validate method without creating an instance of the AuthValidation class, making it a convenient way to perform authentication checks against a MongoDB database.
+
+
+Features of Static Variables
+Static variables are allocated memory once when the object for the class is created for the first time.
+Static variables are created outside of methods but inside a class
+Static variables can be accessed through a class but not directly with an instance.
+Static variables behavior doesn’t change for every object.
+
+Static Methods:
+
+Static methods are methods that are associated with the class itself, rather than with instances of the class. They do not have access to instance-specific data
+
+Static Constants (Class Constants):
+
+Static constants, also known as class constants, are values that are associated with the class itself and remain constant across all instances of the class.
+
+
+
+The Python approach is simple; it doesn’t require a static keyword. 
+
+
+ 

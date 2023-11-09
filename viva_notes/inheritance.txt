@@ -1,0 +1,44 @@
+Inheritance is a fundamental concept in object-oriented programming (OOP) that allows one class (the subclass or derived class) to inherit the properties and behaviors of another class (the superclass or base class). Inheritance promotes code reuse and helps create a hierarchy of related classes, with each subclass inheriting attributes and methods from its superclass. It's used to model the "is-a" relationship between classes, where a subclass is a specialized version of its superclass.
+
+on a practical note
+ Inheritance is a key part of OOP, helping to organize and structure code more efficiently.
+
+
+Where It Is Used:
+
+Inheritance is used in various software development scenarios,
+
+Code Reusability: It helps avoid duplicating code by allowing the reuse of common attributes and methods defined in base classes.
+
+Creating Hierarchies: It allows you to create a hierarchy of classes, with more specific classes inheriting from more general ones, making the code structure more organized and easier to manage.
+
+Polymorphism: Inheritance plays a crucial role in achieving polymorphism, enabling objects of different derived classes to be treated as objects of a common base class.
+
+Extending and Specializing: It permits you to create new classes that are specialized versions of existing classes, while retaining the original functionality.
+
+---------------------------------------
+The User class remains an abstract base class with an abstract method get_user_name.
+
+The UserAuthenticator class now inherits from the User class and overrides the get_user_name method, which is no longer an abstract method. It also includes the find_user method.
+
+
+
+The above code is using single inheritance in Python.
+
+ Single inheritance is when a derived class inherits from a single base class. In this case, the class UserAuthenticator is derived from the base class User.
+
+Multiple Inheritance.
+Multilevel Inheritance.
+Hierarchical Inheritance.
+
+Here's a breakdown of the code:
+
+The User class is defined as an abstract base class (ABC) using the ABC module.
+The User class has an __init__ method that initializes the _id, _name, _email, and _password attributes.
+The User class also has an abstract method get_user_name, which is meant to be implemented by its derived classes.
+The UserAuthenticator class is derived from the User class.
+The UserAuthenticator class has a static method find_user that takes an email and password as parameters
+
+If a user is found, it calls the get_user_name method of the user and returns the user's name. Otherwise, it returns False.
+This code demonstrates the concept of inheritance, where the UserAuthenticator class inherits the attributes and methods of the User class. It also shows the use of abstract classes and static methods
+

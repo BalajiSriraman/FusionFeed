@@ -1,0 +1,76 @@
+https://www.prepbytes.com/blog/python/abstraction-in-python/
+
+Encapsulation 
+
+To enhance encapsulation, you can make several improvements to ensure that the code follows object-oriented principles.
+
+Use of Classes for Encapsulation:
+You've defined classes, which is a good step towards encapsulation. However, you can further enhance encapsulation by organizing your code into well-defined classes and encapsulating the data and methods within these classes.
+
+Private Attributes:
+To encapsulate data, you should make instance variables private by prefixing them with underscores (e.g., _id, _name, _email, and _password) to indicate that they are internal to the class and should not be accessed directly. You can provide getter methods to access these attributes.
+
+In this improved code:
+
+The User class has private attributes, and getter methods are provided to access these attributes. This ensures that the internal data is encapsulated and not accessed directly.
+The UserAuthenticator class is responsible for finding users and returning user objects.
+The UserNameGetter class defines a method for getting the user's name from the user object.
+AuthValidation uses these classes to perform authentication and retrieve user names.
+By encapsulating data and methods within appropriate classes and providing access through getter methods, you improve the maintainability and readability of your code while adhering to encapsulation principles
+
+
+Encapsulation:
+
+What is Encapsulation?:
+Encapsulation is one of the four fundamental OOP concepts, along with Inheritance, Polymorphism, and Abstraction. It refers to the bundling of data (attributes) and the methods (functions) that operate on the data into a single unit called a class. The data is typically hidden from the outs
+
+Specialty of Encapsulation:
+
+
+Data Hiding: Encapsulation ensures that the internal representation of an object is hidden from the outside world, promoting data security and integrity.
+
+Controlled Access: Getter methods provide a controlled way to access the data, allowing the class to define rules
+
+Modularity: Encapsulation promotes modularity in code by grouping related data and behavior together within a class.
+
+In summary, the code demonstrates encapsulation by organizing data and methods into classes, making instance variables are private and providing getter methods to access those private attributes. This practice enhances code maintainability and readability in oops
+
+Abstraction:
+
+What is Abstraction?:
+Abstraction is another fundamental OOP concept that involves simplifying complex reality by modeling classes based on their characteristic properts and behaviors while hiding the unnecessary details. Abstraction allows you to focus on what an object does rather than how it does it.
+
+imp asp of Abstraction:
+
+Hiding Complexity: Abstraction hides the complex implementation details, allowing developers to work with high-level interfaces and focus on the essential characteristics of objects.
+
+Polymorphism: Abstraction allows for polymorphism, where different classes can implement the same abstract interface differently.
+
+Code Reusability: Abstract classes and methods encourage code reusability by defining a common structure that multiple classes can use.
+
+By utilizing abstract classes and methods, the code simplifies the modeling of classes, enforces a common interface for specific behaviors, and allows different subclasses to provide their own implementations. This encapsulation of essential characteristics and behaviors while hiding the underlying complexity is a key aspect of abstraction in object-oriented programming. 
+
+Encapsulation
+
+Use of Classes for Encapsulation: The code organizes data and methods within well-defined classes. In this case, the User class encapsulates user data and related methods, such as getter methods for accessing user attributes.
+
+Private Attributes: To enhance encapsulation, instance variables are made private by prefixing them with underscores (e.g., _id, _name, _email, and _password). This underscores indicate that these attributes are internal to the class and should not be accessed directly. This practice ensures that the internal data is encapsulated and not accessed directly.
+
+Getter Methods: The class provides getter methods (get_id(), get_name(), get_email(), and get_password()) to access these private attributes. 
+
+Abstraction
+
+Abstract Class 'User': The User class is designed as an abstract class, which means it cannot be instantiated directly. It serves as a blueprint for other classes and defines common attributes and methods that all user classes should have. This abstraction allows for a high-level definition of what a user is and should do.
+
+Abstract Method 'get_user_name': Within the UserNameGetter class, there is an abstract method named get_user_name(). 
+
+The abstract method 'get_user_name' is like a promise or a rule in the code. It promises that any class using it will have a method called 'get_user_name,' but it doesn't specify exactly how that method should work. It's up to each class that uses it to decide how to get a user's name. So, different classes can follow the same rule but use their own way to get a user's name.
+
+
+
+
+The abstract method 'get_user_name' is like a template for a specific action: getting a user's name. It's a way of saying, "Here's what you need to do to get a user's name, but I won't tell you exactly how to do it." This template is then given to different classes, and each class decides how to follow the template to get a user's name in its own way.
+
+
+
+	

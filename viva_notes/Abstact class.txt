@@ -1,0 +1,48 @@
+Abstract Class in Object-Oriented Programming (OOP):
+
+Concept:
+Abstract classes are a concept in object-oriented programming (OOP). They are used to define a blueprint for other classes.
+
+An abstract class cannot be instantiated itself but can be subclassed by other classes.
+
+The primary purpose of an abstract class is to provide a common interface for all the classes that inherit from it, ensuring that they implement specific methods or properties.
+
+Abstract classes are a way to achieve abstraction in OOP.
+
+Where it is used:
+
+
+Code Reusability: Abstract classes promote code reusability by allowing multiple classes to inherit common behavior from the abstract class. This avoids redundant code and simplifies maintenance.
+
+Enforcement of Contracts: They enforce the implementation of certain methods or properties in subclasses, ensuring that the subclasses adhere to a contract defined by the abstract class.
+
+
+Standardization or Abstraction: : Abstract classes provide a way to standardize the structure of related classes. They ensure that specific methods or properties are present in all derived classes, which helps in maintaining a consistent interface.
+
+Polymorphism: Abstract classes enable polymorphism, allowing you to create code that can work with objects of different classes as long as they inherit from the same abstract class. This promotes flexibility and extensibility in your code.
+-	----------------------------------------
+Now, let's dive into your Python code and explain how it relates to the concept of abstract classes.
+
+ we define an abstract class called User, which is part of a user authentication system:
+
+
+User is an abstract class that defines the common attributes for all user classes.
+The __init__ method is a constructor to initialize user-specific attributes like _id, _name, _email, and _password.
+
+get_user_name is declared as an abstract method using the @abstractmethod decorator. This means that any concrete (non-abstract) subclass of User must implement this method.
+
+Next, you have a concrete subclass of User called UserAuthenticator, which implements the abstract method:
+
+
+The find_user method is responsible for finding a user based on their email and password in a MongoDB database.
+
+The get_user_name method is implemented, as required by the abstract class User.
+
+The purpose of this design is to provide a common interface (User) for various user-related classes, ensuring that they all implement the get_user_name method. It enforces consistency in how user classes are structured and promotes code reusability.
+
+
+In summary, your code demonstrates the use of abstract classes in Python to create a structure for user-related classes, enforce a common interface, and promote code reusability and standardization in your authentication system. It aligns with the concepts of abstraction, code reusability, and enforcing contracts in OOP.
+
+An abstract class is a class in Python that can have both abstract (methods without implementation) and concrete (fully implemented) methods. It serves as a blueprint for other classes to inherit and provide implementations for the abstract methods. 
+
+The ABC module in Python provides a way to define and work with abstract classes and abstract methods. 
